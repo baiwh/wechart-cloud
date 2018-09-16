@@ -28,12 +28,31 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
 					"name": "db guide",
-					"pathName": "pages/databaseGuide/databaseGuide"
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "addFunction/addFunction",
+					"pathName": "pages/addFunction/addFunction",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "start",
+					"pathName": "pages/start/start",
+					"query": ""
 				}
 			]
 		}
