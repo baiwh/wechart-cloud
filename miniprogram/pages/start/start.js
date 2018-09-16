@@ -6,11 +6,18 @@ Page({
    */
   data: {
     userInfo:{},
-    avatarUrl:''
+    avatarUrl:'./../../images/n.jpg',
+    isAuthSetting: true,
   },
 
-  getUserInfo: function(){
-
+  onGetUserInfo: function(e) {
+    if (!this.logged && e.detail.userInfo) {
+      this.setData({
+        isAuthSetting: true,
+        avatarUrl: e.detail.userInfo.avatarUrl,
+        userInfo: e.detail.userInfo
+      })
+    }
   },
 
   /**
@@ -28,6 +35,8 @@ Page({
                 avatarUrl: res.userInfo.avatarUrl,
                 userInfo: res.userInfo
               })
+              let app = getApp()
+              app.globalData.userInfo = res.userInfo
             }
           })
         }

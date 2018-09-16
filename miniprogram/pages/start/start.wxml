@@ -2,5 +2,6 @@
 <view>
   <image src='{{avatarUrl}}'></image>
   <button
-  bindtap='getUserInfo'>开始使用</button>
+  open-type='getUserInfo'
+  bindgetuserinfo='onGetUserInfo'>开始使用</button>
 </view>
