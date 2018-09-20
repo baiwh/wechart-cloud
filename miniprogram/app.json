@@ -13,6 +13,29 @@
     "pages/echarts/echarts",
     "pages/history/history"
   ],
+  "tabBar": {
+    "selectedColor": "#3eaffe",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "selectedIconPath": "images/home-s.png",
+        "iconPath": "images/home.png"
+      },
+      {
+        "pagePath": "pages/echarts/echarts",
+        "text": "统计",
+        "selectedIconPath": "images/echarts-s.png",
+        "iconPath": "images/echarts.png"
+      },
+      {
+        "pagePath": "pages/history/history",
+        "text": "历史",
+        "selectedIconPath": "images/history-s.png",
+        "iconPath": "images/history.png"
+      }
+    ]
+  },
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",

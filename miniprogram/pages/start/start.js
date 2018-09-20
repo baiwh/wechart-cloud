@@ -55,7 +55,9 @@ Page({
                             let app = getApp()
                             app.globalData.userInfo = res.userInfo
                             // 跳转到主页
-
+                            wx.switchTab({
+                                url: '/home'
+                            })
                         }
                     })
                 }
