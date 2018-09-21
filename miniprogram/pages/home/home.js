@@ -19,32 +19,36 @@ Page({
             time: e.detail.value
         })
     },
-    signIn: () => {
+    signIn: function () {
         wx.showLoading({
-            mask:true
+            mask: true
         })
+        let app = getApp()
+        console.log(app.globalData.userInfo)
         const db = wx.cloud.database()
         db.collection('signin').add({
             data: {
                 date: this.data.date,
-                time: this.data.time
+                time: this.data.time,
+                nickName: app.globalData.userInfo.nickName
             },
             success: res => {
+                wx.hideLoading()
                 wx.showToast({
                     icon: 'success',
                     title: '打卡成功',
+                    duration: 1000
                 })
                 console.log('[数据库] [新增记录] 成功，记录 _id: ', res._id)
             },
             fail: err => {
+                wx.hideLoading()
                 wx.showToast({
                     icon: 'none',
-                    title: '打卡失败'
+                    title: '打卡失败',
+                    duration: 1000
                 })
                 console.error('[数据库] [新增记录] 失败：', err)
-            },
-            complete:()=>{
-                wx.hideLoading()
             }
         })
     },

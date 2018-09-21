@@ -9,7 +9,7 @@ picker{
   color: #adadad;
   text-align: center;
   float: left;
-  top: 100rpx;
+  top: 150rpx;
   left: 33rpx;
   margin: 0 20rpx 0 20rpx;
   position: relative;
@@ -21,7 +21,7 @@ picker{
   height: 250rpx;
   width: 250rpx;
   box-shadow: 0 0 50rpx #b4b4b4;
-  top: 370rpx;
+  top: 450rpx;
 }
 .sign-in-img{
   height: 70rpx;
