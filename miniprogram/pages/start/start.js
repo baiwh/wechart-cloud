@@ -23,6 +23,10 @@ Page({
             app.globalData.userInfo = e.detail.userInfo
             // 传回数据库
             this.onAdd(e.detail.userInfo)
+            // 跳转到主页
+            wx.switchTab({
+                url: './../home/home'
+            })
         }
     },
 
@@ -41,10 +45,12 @@ Page({
      */
     onLoad: function (options) {
         // 获取用户信息
+        wx.showLoading()
         wx.getSetting({
             success: res => {
                 if (res.authSetting['scope.userInfo']) {
                     // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
+                    wx.showLoading()
                     wx.getUserInfo({
                         success: res => {
                             this.setData({
@@ -56,11 +62,17 @@ Page({
                             app.globalData.userInfo = res.userInfo
                             // 跳转到主页
                             wx.switchTab({
-                                url: '/home'
+                                url: './../home/home'
                             })
+                        },
+                        complete: ()=>{
+                            wx.hideLoading()
                         }
                     })
                 }
+            },
+            complete: ()=>{
+                wx.hideLoading()
             }
         })
     },

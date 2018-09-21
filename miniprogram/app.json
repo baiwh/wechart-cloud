@@ -18,7 +18,7 @@
     "list": [
       {
         "pagePath": "pages/home/home",
-        "text": "首页",
+        "text": "主页",
         "selectedIconPath": "images/home-s.png",
         "iconPath": "images/home.png"
       },
