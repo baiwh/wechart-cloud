@@ -1,1 +1,32 @@
 /* miniprogram/pages/home/home.wxss */
+page {
+  background: #f6f6f6;
+}
+picker{
+  border-top: 1rpx solid #dcdcdc;
+  border-bottom: 1rpx solid #dcdcdc;
+  width: 300rpx;
+  color: #adadad;
+  text-align: center;
+  float: left;
+  top: 100rpx;
+  left: 33rpx;
+  margin: 0 20rpx 0 20rpx;
+  position: relative;
+  line-height: 70rpx;
+}
+.sign-in{
+  background: #3eaffe;
+  border-radius: 50%;
+  height: 250rpx;
+  width: 250rpx;
+  box-shadow: 0 0 50rpx #b4b4b4;
+  top: 370rpx;
+}
+.sign-in-img{
+  height: 70rpx;
+  width: 70rpx;
+  top: 48%;
+  transform: translateY(-50%);
+  position: relative;
+}

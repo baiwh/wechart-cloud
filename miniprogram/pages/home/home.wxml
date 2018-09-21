@@ -1,2 +1,8 @@
 <!--miniprogram/pages/home/home.wxml-->
-<text>miniprogram/pages/home/home.wxml</text>
+<view class='home'>
+    <picker mode="date" value="{{date}}"
+    bindchange="bindDateChange"><view class='picker'>{{date}}</view></picker>
+    <picker mode="time" value="{{time}}"
+    bindchange="bindTimeChange"><view>{{time}}</view></picker>
+    <button bindtap='signIn' class='sign-in'><image class='sign-in-img' src="./../../images/switch.png"></image></button>
+</view>
