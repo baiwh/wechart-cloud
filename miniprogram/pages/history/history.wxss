@@ -1,1 +1,8 @@
-/* miniprogram/pages/history/history.wxss */
+#history-echarts {
+  position: absolute;
+  top: 0;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+}
+

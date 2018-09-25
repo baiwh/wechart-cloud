@@ -11,7 +11,8 @@
     "pages/start/start",
     "pages/home/home",
     "pages/echarts/echarts",
-    "pages/history/history"
+    "pages/history/history",
+    "pages/multiCharts/index"
   ],
   "tabBar": {
     "selectedColor": "#3eaffe",
