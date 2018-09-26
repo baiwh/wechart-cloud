@@ -28,30 +28,12 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 4,
 			"list": [
-				{
-					"id": -1,
-					"name": "db guide",
-					"pathName": "pages/databaseGuide/databaseGuide",
-					"query": ""
-				},
 				{
 					"id": -1,
 					"name": "index",
 					"pathName": "pages/index/index",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "addFunction/addFunction",
-					"pathName": "pages/addFunction/addFunction",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "start",
-					"pathName": "pages/start/start",
 					"query": ""
 				},
 				{
@@ -70,6 +52,12 @@
 					"id": -1,
 					"name": "history",
 					"pathName": "pages/history/history",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "multiCharts",
+					"pathName": "pages/multiCharts/index",
 					"query": ""
 				}
 			]

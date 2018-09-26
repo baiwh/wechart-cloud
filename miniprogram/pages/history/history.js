@@ -53,7 +53,6 @@ function getVirtulData(year) {
 }
 function getBarOption() {
     return {
-        tooltip : {},
         calendar: {
             top: 'middle',
             left: 'center',
