@@ -2,17 +2,9 @@
   "cloud": true,
   "pages": [
     "pages/index/index",
-    "pages/userConsole/userConsole",
-    "pages/storageConsole/storageConsole",
-    "pages/databaseGuide/databaseGuide",
-    "pages/addFunction/addFunction",
-    "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib",
-    "pages/start/start",
     "pages/home/home",
     "pages/echarts/echarts",
-    "pages/history/history",
-    "pages/multiCharts/index"
+    "pages/history/history"
   ],
   "tabBar": {
     "selectedColor": "#3eaffe",

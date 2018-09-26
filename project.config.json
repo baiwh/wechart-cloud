@@ -71,12 +71,6 @@
 					"name": "history",
 					"pathName": "pages/history/history",
 					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "multiCharts",
-					"pathName": "pages/multiCharts/index",
-					"query": ""
 				}
 			]
 		}
