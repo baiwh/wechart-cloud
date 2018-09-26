@@ -55,35 +55,43 @@ function getBarOption() {
     return {
         calendar: {
             top: 'middle',
-            left: 'center',
+            left: '10%',
             orient: 'vertical',
-            cellSize: 40,
+            cellSize: 35,
+            itemStyle:{
+                fontSize: 10,
+                color: '#999'
+            },
             yearLabel: {
                 margin: 50,
                 textStyle: {
-                    fontSize: 30
+                    fontSize: 10
                 }
             },
             dayLabel: {
-                firstDay: 1,
-                nameMap: 'cn'
-            },
-            monthLabel: {
+                firstDay: 7,
                 nameMap: 'cn',
-                margin: 15,
                 textStyle: {
-                    fontSize: 20,
+                    fontSize: 10,
                     color: '#999'
                 }
             },
-            range: ['2018-09', '2018-10']
+            monthLabel: {
+                nameMap: 'cn',
+                margin: 10,
+                verticalAlign:'middle',
+                textStyle: {
+                    fontSize: 10,
+                    color: '#999'
+                }
+            },
+            range: ['2018-09']
         },
         visualMap: {
+            show: false,
             min: 0,
             max: 1000,
             type: 'piecewise',
-            left: 'center',
-            bottom: 20,
             inRange: {
                 color: ['#5291FF', '#C7DBFF']
             },
@@ -92,27 +100,6 @@ function getBarOption() {
         },
         series: [{
             type: 'graph',
-            edgeSymbol: ['none', 'arrow'],
-            coordinateSystem: 'calendar',
-            symbolSize: 15,
-            calendarIndex: 0,
-            itemStyle: {
-                normal: {
-                    color: 'yellow',
-                    shadowBlue: 9,
-                    shadowOffsetX: 1.5,
-                    shadowOffsetY: 3,
-                    shadowColor: '#555'
-                }
-            },
-            lineStyle: {
-                normal: {
-                    color: '#D10E00',
-                    width: 1,
-                    opacity: 1
-                }
-            },
-            z: 20
         }, {
             type: 'heatmap',
             coordinateSystem: 'calendar',

@@ -1,12 +1,10 @@
 #history-echarts {
   position: absolute;
   top: 0;
-  bottom: 20%;
+  bottom: 0%;
+  margin-bottom: 20%;
   left: 0;
   right: 0;
 }
-ec-canvas{
-  height: 80%;
-  width: 100%;
-}
+
 
