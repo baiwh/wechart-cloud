@@ -54,8 +54,8 @@ function getVirtulData(year) {
 function getBarOption() {
     return {
         calendar: {
-            top: 'middle',
-            left: '10%',
+          top: '30%',
+          left: 'center',
             orient: 'vertical',
             cellSize: 35,
             itemStyle:{
@@ -95,15 +95,24 @@ function getBarOption() {
             inRange: {
                 color: ['#5291FF', '#C7DBFF']
             },
-            seriesIndex: [1],
             orient: 'horizontal'
         },
-        series: [{
-            type: 'graph',
-        }, {
+        series: {
             type: 'heatmap',
             coordinateSystem: 'calendar',
-            data: getVirtulData(2018)
-        }]
+            data: getVirtulData(2018),
+            label: {
+              normal: {
+                show: true,
+                formatter: function (params) {
+                  var d = echarts.number.parseDate(params.value[0]);
+                  return d.getDate();
+                },
+                textStyle: {
+                  color: '#000'
+                }
+              }
+            },
+        }
     };
 }
