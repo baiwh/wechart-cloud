@@ -7,6 +7,7 @@ Page({
      * 页面的初始数据
      */
     data: {
+        echartsOption:{},
         ecBar: {
             onInit: function (canvas, width, height) {
                 const barChart = echarts.init(canvas, null, {

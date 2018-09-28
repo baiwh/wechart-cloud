@@ -5,4 +5,5 @@
     <picker mode="time" value="{{time}}"
     bindchange="bindTimeChange"><view>{{time}}</view></picker>
     <button bindtap='signIn' class='sign-in'><image class='sign-in-img' src="./../../images/switch.png"></image></button>
+    <button bindtap='refreshBtn' class='refresh-btn'><image class='refresh-img' src='./../../images/refresh.png'></image></button>
 </view>

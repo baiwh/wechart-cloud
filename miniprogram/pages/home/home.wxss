@@ -30,3 +30,19 @@ picker{
   transform: translateY(-50%);
   position: relative;
 }
+.refresh-btn{
+  border-radius: 50%;
+  height: 120rpx;
+  width: 120rpx;
+  /* box-shadow: 0 0 50rpx #b4b4b4; */
+  border: 1rpx solid #bbbbbb;
+  top: 550rpx;
+  padding: 0;
+}
+.refresh-img{
+  height: 50rpx;
+  width: 50rpx;
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+}
