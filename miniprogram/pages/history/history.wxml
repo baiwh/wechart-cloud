@@ -1,5 +1,7 @@
 <!--miniprogram/pages/history/history.wxml-->
 <view>
+  <picker mode="date" value="{{date}}"
+    bindchange="bindDateChange"><view class=''>{{date}}</view></picker>
   <ec-canvas class="history-echarts"
     id="mychart-dom-bar"
     canvas-id="mychart-bar"

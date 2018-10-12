@@ -75,10 +75,17 @@ Page({
      * 页面的初始数据
      */
     data: {
+        data: '',
         echartsOption: {},
         ec: {
             lazyLoad: true
         },
+    },
+    // 时间选择器-日期
+    bindDateChange: function (e) {
+        this.setData({
+            date: e.detail.value
+        })
     },
     // 点击按钮后初始化图表
     init: function () {
