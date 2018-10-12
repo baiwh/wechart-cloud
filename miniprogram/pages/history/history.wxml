@@ -1,7 +1,7 @@
 <!--miniprogram/pages/history/history.wxml-->
 <view>
-  <ec-canvas id="history-echarts"
-  canvas-id="mychart-multi-bar"
-  ec="{{ ecBar }}"></ec-canvas>
-
+  <ec-canvas class="history-echarts"
+    id="mychart-dom-bar"
+    canvas-id="mychart-bar"
+    ec="{{ ec }}"></ec-canvas>
 </view>

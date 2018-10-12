@@ -1,13 +1,16 @@
 /* miniprogram/pages/start/start.wxss */
+/* 页面背景颜色 */
 page {
   background: #f6f6f6;
 }
+/* 首页按钮 */
 button{
   background: #3eaffe;
   color: #ffffff;
   margin: 20%;
   top: 500rpx;
 }
+/* 页面背景颜色 */
 image{
   height: 200rpx;
   width: 200rpx;
