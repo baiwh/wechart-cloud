@@ -75,7 +75,8 @@ Page({
      * 页面的初始数据
      */
     data: {
-        data: '',
+        date: '2018-09',
+        signInData: '',
         echartsOption: {},
         ec: {
             lazyLoad: true
@@ -87,7 +88,7 @@ Page({
             date: e.detail.value
         })
     },
-    // 点击按钮后初始化图表
+    // 初始化图表
     init: function () {
         this.ecComponent.init((canvas, width, height) => {
             // 初始化图表

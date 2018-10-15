@@ -1,9 +1,18 @@
 <!--miniprogram/pages/history/history.wxml-->
 <view>
-  <picker mode="date" value="{{date}}"
-    bindchange="bindDateChange"><view class=''>{{date}}</view></picker>
-  <ec-canvas class="history-echarts"
-    id="mychart-dom-bar"
-    canvas-id="mychart-bar"
-    ec="{{ ec }}"></ec-canvas>
+<!-- 年、月选择器 -->
+  <picker mode="date" value="{{date}}" fields="month"
+    bindchange="bindDateChange"><view class='picker'>{{date}}</view></picker>
+    <!-- 日历 -->
+  <ec-canvas class="history-echarts" id="mychart-dom-bar"
+    canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+    <!-- 未打卡 -->
+    <!-- <view>
+      <button>+</button>
+    </view> -->
+    <!-- 已打卡 -->
+    <!-- <view>
+      <view>{{signInData}}</view>
+      <button>-</button>
+    </view> -->
 </view>
