@@ -8,16 +8,13 @@ function setOption(chart) {
             top: '30%',
             left: 'center',
             orient: 'vertical',
-            cellSize: 35,
+            cellSize: 40,
             itemStyle: {
                 fontSize: 10,
                 color: '#999'
             },
             yearLabel: {
-                margin: 50,
-                textStyle: {
-                    fontSize: 10
-                }
+                show:false
             },
             dayLabel: {
                 firstDay: 7,
@@ -28,13 +25,7 @@ function setOption(chart) {
                 }
             },
             monthLabel: {
-                nameMap: 'cn',
-                margin: 10,
-                verticalAlign: 'middle',
-                textStyle: {
-                    fontSize: 10,
-                    color: '#999'
-                }
+                show:false
             },
             range: ['2018-09']
         },
