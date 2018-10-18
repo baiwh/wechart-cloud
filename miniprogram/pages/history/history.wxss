@@ -22,10 +22,25 @@ picker{
   z-index: 100;
 }
 .sign-in-data{
-  background: #f6f6f6;
+  background: #ffffff;
+  width: 750rpx;
+  float: left;
+  height: 100rpx;
 }
 .sign-in-btn{
+  height: 70rpx;
+  width: 70rpx;
+  border-radius: 50%;
+  float: left;
+  margin: 15rpx 0 15rpx 50rpx;
+}
+.add{
+  background: #46d872;
+}
+.remove{
+  background: #ee5454
+}
+.btn-img{
   height: 50rpx;
   width: 50rpx;
-  border-radius: 50%;
 }
