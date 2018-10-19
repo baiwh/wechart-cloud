@@ -24,8 +24,9 @@ picker{
 .sign-in-data{
   background: #ffffff;
   width: 750rpx;
-  float: left;
+  position: relative;
   height: 100rpx;
+  top: 800rpx;
 }
 .sign-in-btn{
   height: 70rpx;
@@ -33,6 +34,8 @@ picker{
   border-radius: 50%;
   float: left;
   margin: 15rpx 0 15rpx 50rpx;
+  padding: 0;
+  line-height: 85rpx;
 }
 .add{
   background: #46d872;
