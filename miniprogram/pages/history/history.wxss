@@ -23,19 +23,23 @@ picker{
 }
 .sign-in-data{
   background: #ffffff;
-  width: 750rpx;
+  width: 700rpx;
   position: relative;
   height: 100rpx;
+  margin: 0 25rpx 0 25rpx;
   top: 800rpx;
+  box-shadow: 0 0 50rpx #c5c5c5;
 }
 .sign-in-btn{
-  height: 70rpx;
-  width: 70rpx;
+  height: 50rpx;
+  width: 50rpx;
   border-radius: 50%;
   float: left;
-  margin: 15rpx 0 15rpx 50rpx;
+  transform: translateY(-50%);
+  top: 50%;
   padding: 0;
-  line-height: 85rpx;
+  left: 25rpx;
+  position: absolute;
 }
 .add{
   background: #46d872;
@@ -44,6 +48,10 @@ picker{
   background: #ee5454
 }
 .btn-img{
-  height: 50rpx;
-  width: 50rpx;
+  height: 30rpx;
+  width: 30rpx;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
 }

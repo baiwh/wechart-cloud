@@ -7,12 +7,16 @@
 <ec-canvas class="history-echarts" id="mychart-dom-bar"
     canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
     <!-- 未打卡 -->
-    <view class="sign-in-data">
-      <button class='sign-in-btn add'><image class='btn-img' src='./../../images/add.png'></image></button>
-    </view>
+    <!-- <view class="sign-in-data">
+      <button class='sign-in-btn add'>
+        <image class='btn-img' src='./../../images/add.png'></image>
+      </button>
+    </view> -->
     <!-- 已打卡 -->
     <view class="sign-in-data">
       <view>{{signInData}}</view>
-      <button class='sign-in-btn remove'><image class='btn-img' src='./../../images/remove.png'></image></button>
+      <button class='sign-in-btn remove'>
+        <image class='btn-img' src='./../../images/remove.png'></image>
+      </button>
     </view>
 </view>

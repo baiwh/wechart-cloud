@@ -1,9 +1,9 @@
 // miniprogram/pages/history/history.js
 import * as echarts from "../../ec-canvas/echarts";
-
+let chart
 // 图表数据
 function setOption(chart) {
-    const option = {
+    let option = {
         calendar: {
             top: '30%',
             left: 'center',
@@ -32,23 +32,35 @@ function setOption(chart) {
         visualMap: {
             show: false,
             min: 0,
-            max: 1000,
+            max: 5,
             type: 'piecewise',
             inRange: {
-                color: ['#5291FF', '#C7DBFF']
+                color: ['#ffffff', '#5291FF']
             },
             orient: 'horizontal'
         },
         series: {
             type: 'heatmap',
             coordinateSystem: 'calendar',
-            data: getVirtulData(2018),
+            data: [["2018-09-01", 5],["2018-09-02", 0],["2018-09-03", 0],["2018-09-04", 0],["2018-09-05", 0],["2018-09-06", 0],
+                ["2018-09-07", 0],["2018-09-08", 0],["2018-09-09", 0],["2018-09-10", 0],["2018-09-11", 0],
+                ["2018-09-12", 0],["2018-09-13", 0],["2018-09-14", 0],["2018-09-15", 0],["2018-09-16", 0],
+                ["2018-09-17", 0],["2018-09-18", 0],["2018-09-19", 0],["2018-09-20", 0],["2018-09-21", 0],
+                ["2018-09-22", 0],["2018-09-23", 0],["2018-09-24", 0],["2018-09-25", 0],["2018-09-26", 0],
+                ["2018-09-27", 0],["2018-09-28", 0],["2018-09-29", 0],["2018-09-30", 0],["2018-09-31", 0]],
             label: {
                 normal: {
                     show: true,
                     formatter: function (params) {
-                        var d = echarts.number.parseDate(params.value[0]);
-                        return d.getDate();
+                        let day = params.value[0].split('-')[2]
+                        let d = day.charAt(0)
+                        let data = ''
+                        if (d==='0') {
+                            data = day.charAt(1)
+                        } else{
+                            data = day
+                        }
+                        return data;
                     },
                     textStyle: {
                         color: '#000'
@@ -117,16 +129,15 @@ Page({
 
 // 日历背景颜色随机函数
 function getVirtulData(year) {
-    year = year || '2017';
-    var date = +echarts.number.parseDate(year + '-01-01');
-    var end = +echarts.number.parseDate((+year + 1) + '-01-01');
-    var dayTime = 3600 * 24 * 1000;
-    var data = [];
-    for (var time = date; time < end; time += dayTime) {
-        data.push([
-            echarts.format.formatTime('yyyy-MM-dd', time),
-            Math.floor(Math.random() * 1000)
-        ]);
-    }
-    return data;
+    // year = year || '2017';
+    // var date = +echarts.number.parseDate(year + '-01-01');
+    // var end = +echarts.number.parseDate((+year + 1) + '-01-01');
+    // var dayTime = 3600 * 24 * 1000;
+    // var data = [];
+    // for (var time = date; time < end; time += dayTime) {
+    //     data.push([
+    //         echarts.format.formatTime('yyyy-MM-dd', time),
+    //         Math.floor(Math.random() * 1000)
+    //     ]);
+    // }
 }
