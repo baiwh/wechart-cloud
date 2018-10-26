@@ -30,6 +30,12 @@ picker{
   top: 800rpx;
   box-shadow: 0 0 50rpx #c5c5c5;
 }
+.sign-in-data-time{
+  color: #7c7c7c;
+  position: absolute;
+  left: 150rpx;
+  line-height: 100rpx;
+}
 .sign-in-btn{
   height: 50rpx;
   width: 50rpx;

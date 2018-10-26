@@ -14,7 +14,7 @@
     </view> -->
     <!-- 已打卡 -->
     <view class="sign-in-data">
-      <view>{{signInData}}</view>
+      <view class="sign-in-data-time">{{signInData}}</view>
       <button class='sign-in-btn remove'>
         <image class='btn-img' src='./../../images/remove.png'></image>
       </button>
