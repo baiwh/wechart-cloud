@@ -27,7 +27,7 @@ picker{
   position: relative;
   height: 100rpx;
   margin: 0 25rpx 0 25rpx;
-  top: 800rpx;
+  top: 750rpx;
   box-shadow: 0 0 50rpx #c5c5c5;
 }
 .sign-in-data-time{

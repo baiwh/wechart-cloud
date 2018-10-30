@@ -1,1 +1,6 @@
 /* miniprogram/pages/echarts/echarts.wxss */
+#mychart-dom-bar{
+   height: 1000rpx;
+   width: 750rpx;
+   float:left;
+}
