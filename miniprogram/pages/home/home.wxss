@@ -1,12 +1,12 @@
 /* miniprogram/pages/home/home.wxss */
 page {
-  background: #f6f6f6;
+  background: #ffffff;
 }
 picker{
   border-top: 1rpx solid #dcdcdc;
   border-bottom: 1rpx solid #dcdcdc;
   width: 300rpx;
-  color: #adadad;
+  color: #c2c2c2;
   text-align: center;
   float: left;
   top: 150rpx;
@@ -20,7 +20,7 @@ picker{
   border-radius: 50%;
   height: 250rpx;
   width: 250rpx;
-  box-shadow: 0 0 50rpx #b4b4b4;
+  /* box-shadow: 0 0 70rpx #b4b4b4c2; */
   top: 450rpx;
 }
 .sign-in-img{

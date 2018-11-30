@@ -46,9 +46,21 @@ Page({
                 left: 'center',
                 orient: 'vertical',
                 cellSize: 40,
+                splitLine: {
+                  show: true,
+                  lineStyle: {
+                    color: '#ffffff',
+                    width: 1,
+                    type: 'solid'
+                  }
+                },
                 itemStyle: {
                     fontSize: 10,
-                    color: '#999'
+                    color: '#999',
+                    normal: {
+                      borderWidth: 1,
+                      borderColor: '#ffffff'
+                    }
                 },
                 yearLabel: {
                     show: false

@@ -1,5 +1,5 @@
 page {
-  background: #f6f6f6;
+  background: #ffffff;
 }
 .history-echarts {
   position: absolute; 
@@ -23,17 +23,18 @@ picker{
 }
 .sign-in-data{
   background: #ffffff;
-  width: 700rpx;
   position: relative;
   height: 100rpx;
-  margin: 0 25rpx 0 25rpx;
   top: 750rpx;
-  box-shadow: 0 0 50rpx #c5c5c5;
+  border-top: 1rpx solid #dcdcdc;
+  border-bottom: 1rpx solid #dcdcdc;
+  margin: 0 30rpx;
 }
 .sign-in-data-time{
   color: #7c7c7c;
   position: absolute;
-  left: 150rpx;
+  left: 50%;
+  transform: translateX(-50%);
   line-height: 100rpx;
 }
 .sign-in-btn{
