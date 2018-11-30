@@ -1,22 +1,27 @@
 <!--miniprogram/pages/history/history.wxml-->
 <view>
-<!-- 年、月选择器 -->
-  <picker mode="date" value="{{date}}" fields="month"
+
+    <!-- 年、月选择器 -->
+    <picker mode="date" value="{{date}}" fields="month"
     bindchange="bindDateChange"><view class='picker'>{{date}}</view></picker>
+
     <!-- 日历 -->  
-<ec-canvas class="history-echarts" id="mychart-dom-bar"
+    <ec-canvas class="history-echarts" id="mychart-dom-bar"
     canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+
     <!-- 未打卡 -->
-    <!-- <view class="sign-in-data">
+    <view class="sign-in-data" wx:if="{{signInData===''}}">
       <button class='sign-in-btn add'>
         <image class='btn-img' src='./../../images/add.png'></image>
       </button>
-    </view> -->
+    </view>
+
     <!-- 已打卡 -->
-    <view class="sign-in-data">
+    <view class="sign-in-data" wx:else>
       <view class="sign-in-data-time">{{signInData}}</view>
       <button class='sign-in-btn remove'>
         <image class='btn-img' src='./../../images/remove.png'></image>
       </button>
     </view>
+
 </view>

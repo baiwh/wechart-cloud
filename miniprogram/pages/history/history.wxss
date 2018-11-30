@@ -25,9 +25,9 @@ picker{
   background: #ffffff;
   position: relative;
   height: 100rpx;
-  top: 750rpx;
+  top: 700rpx;
   border-top: 1rpx solid #dcdcdc;
-  border-bottom: 1rpx solid #dcdcdc;
+  /* border-bottom: 1rpx solid #dcdcdc; */
   margin: 0 30rpx;
 }
 .sign-in-data-time{
@@ -42,17 +42,20 @@ picker{
   width: 50rpx;
   border-radius: 50%;
   float: left;
-  transform: translateY(-50%);
-  top: 50%;
   padding: 0;
   left: 25rpx;
   position: absolute;
 }
 .add{
   background: #46d872;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
 }
 .remove{
-  background: #ee5454
+  background: #ee5454;
+  transform: translateY(-50%);
+  top: 50%;
 }
 .btn-img{
   height: 30rpx;

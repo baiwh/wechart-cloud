@@ -8,6 +8,8 @@
   ],
   "tabBar": {
     "selectedColor": "#3eaffe",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
     "list": [
       {
         "pagePath": "pages/home/home",
@@ -30,10 +32,10 @@
     ]
   },
   "window": {
-    "backgroundColor": "#F6F6F6",
+    "backgroundColor": "#ffffff",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "加班宝宝",
     "navigationBarTextStyle": "black"
   }
 }
